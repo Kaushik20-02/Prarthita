@@ -82,6 +82,13 @@ html {
       .caption {
         font-size: 0.9rem;
       }
+      h1{
+        font-size: 1.4rem;
+        padding-bottom: 3rem;
+      }
+      ul{
+        padding-left: 2rem;
+      }
     }
 .bg {
   /* Location of the image */
@@ -259,3 +266,4 @@ body {
   padding: 0;
   text-align: center;
 }
+
