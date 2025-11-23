@@ -16,7 +16,7 @@ const second = 1000,
   minute = second * 60,
   hour = minute * 60,
   day = hour * 24;
-let countDown = new Date('Nov 30, 2025 00:00:00').getTime(),
+let countDown = new Date('Nov 3, 2025 00:00:00').getTime(),
   x = setInterval(function () {
     let now = new Date().getTime(),
       distance = countDown - now;
@@ -190,23 +190,22 @@ const _slideEnam = function () {
   const slideEnam = document.getElementById('slideEnam');
   slideEnam.classList.remove('d-none');
 
-  setTimeout(() => {
-    slideEnam.classList.add('animate__fadeOut');
+  // setTimeout(() => {
+  //   slideEnam.classList.add('animate__fadeOut');
     setTimeout(() => {
-      _restartShow();
-    }, 1000);
-  }, 8000); // wait 8 seconds before restarting
+      location.reload();
+  }, 1000); // wait 8 seconds before restarting
 };
 
 new TypeIt("#teks1", {
-  strings: ["Today, I send all my best prayers for you.", "May the things that make you fall become the reason for you to continue growing.", "May the world always protect you wherever you are.", "May your days always be accompanied by love that never has limits.", "May every step you take be made easy until you achieve what you want"],
+  strings: ["Today, I send all my best prayers for you.", "May the things that make you fall become the reason for you to continue growing.", "May the world always protect you wherever you are.", "May your days always be accompanied by love that never has limits.", "May every step you take be made easy until you achieve what you want."],
   startDelay: 4000,
   speed: 75,
   waitUntilVisible: true
 }).go();
 
 new TypeIt("#teks2", {
-  strings: ["With or without me, may the universe always make you happy in whatever way it takes.", "", "barakallah fi umrik, thank you for enduring this far", " ", "- Wish all you the best"],
+  strings: ["With or without me, may the universe always make you happy in whatever way it takes.", "", "may God bless your life, thank you for enduring this far my love", " ", "- Wish all you the best Prarthita"],
   startDelay: 2000,
   speed: 75,
   waitUntilVisible: true
@@ -491,5 +490,4 @@ function confetti() {
 
   if (!onlyOnKonami) poof();
 };
-
 
