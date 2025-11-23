@@ -16,7 +16,7 @@ const second = 1000,
   minute = second * 60,
   hour = minute * 60,
   day = hour * 24;
-let countDown = new Date('Nov 30, 2025 00:00:00').getTime(),
+let countDown = new Date('Nov 3, 2025 00:00:00').getTime(),
   x = setInterval(function () {
     let now = new Date().getTime(),
       distance = countDown - now;
@@ -490,5 +490,6 @@ function confetti() {
 
   if (!onlyOnKonami) poof();
 };
+
 
 
